@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Persona AI Form</title>
+    <style>
+        h1 {
+            font-size: 24px;
+            font-family: 'Helvetica Neue', sans-serif;
+            color: white;
+        }
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background: linear-gradient(to right, #121212, #2c3e50);
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            color: white;
+            text-align: left;
+            overflow-y: auto; /* Enable vertical scrolling */
+            max-height: 70vh; /* Set a maximum height for scrolling */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        textarea, select, input {
+            width: calc(100% - 20px); /* Adjusted width to account for padding */
+            padding: 10px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<body>
+    <h1>Persona AI Form</h1>
+    <form method="post">
+        <!-- Professional Background -->
+        <label for="username">Enter your unique username</label>
+        <input type="text" id="username" name="username">
+
+        <label for="primary_expertise">Primary Area of Expertise/Profession:</label>
+        <input type="text" id="primary_expertise" name="primary_expertise">
+
+        <label for="key_skills">Key Skills or Specialties:</label>
+        <textarea id="key_skills" name="key_skills" rows="4"></textarea>
+
+        <label for="experience_years">Years of Experience:</label>
+        <input type="text" id="experience_years" name="experience_years">
+
+        <!-- Knowledge Domain -->
+        <label for="knowledge_topics">Knowledgeable Topics:</label>
+        <textarea id="knowledge_topics" name="knowledge_topics" rows="4"></textarea>
+
+        <label for="limited_knowledge_areas">Limited Knowledge Areas:</label>
+        <textarea id="limited_knowledge_areas" name="limited_knowledge_areas" rows="4"></textarea>
+
+        <!-- Communication Style -->
+        <label for="communication_style">Preferred Style of Communication:</label>
+        <textarea id="communication_style" name="communication_style" rows="4"></textarea>
+
+        <label for="response_preference">Response Preference (Detailed/Concise):</label>
+        <select id="response_preference" name="response_preference">
+            <option value="detailed">Detailed</option>
+            <option value="concise">Concise</option>
+        </select>
+
+        <!-- Personality Traits -->
+        <label for="personality_description">Personality Description:</label>
+        <textarea id="personality_description" name="personality_description" rows="4"></textarea>
+
+        <label for="response_to_challenges">Response to Challenges:</label>
+        <textarea id="response_to_challenges" name="response_to_challenges" rows="4"></textarea>
+
+        <!-- Country and Culture -->
+        <label for="current_country">Current Country:</label>
+        <input type="text" id="current_country" name="current_country">
+
+        <label for="cultural_considerations">Cultural Considerations:</label>
+        <textarea id="cultural_considerations" name="cultural_considerations" rows="4"></textarea>
+
+        <!-- Response to General Questions -->
+        <label for="general_response">AI Response to Questions Outside Expertise:</label>
+        <textarea id="general_response" name="general_response" rows="4"></textarea>
+
+        <label for="global_topics_response">AI Response to Global Topics:</label>
+        <textarea id="global_topics_response" name="global_topics_response" rows="4"></textarea>
+
+        <!-- Preferred Information Sources -->
+        <label for="preferred_sources">Preferred Information Sources:</label>
+        <textarea id="preferred_sources" name="preferred_sources" rows="4"></textarea>
+
+        <label for="stay_updated_method">Stay Updated Method in Your Field:</label>
+        <textarea id="stay_updated_method" name="stay_updated_method" rows="4"></textarea>
+
+        <!-- Handling Controversial Topics -->
+        <label for="controversial_handling">Handling Controversial Topics:</label>
+        <textarea id="controversial_handling" name="controversial_handling" rows="4"></textarea>
+
+        <!-- Feedback Mechanism -->
+        <label for="feedback_comfort">Comfort with User Feedback:</label>
+        <select id="feedback_comfort" name="feedback_comfort">
+            <option value="comfortable">Comfortable</option>
+            <option value="neutral">Neutral</option>
+            <option value="uncomfortable">Uncomfortable</option>
+        </select>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    
+    
+
+</body>
+</html>
